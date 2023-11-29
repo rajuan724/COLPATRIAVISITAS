@@ -14,7 +14,7 @@ persist_with: colpatriavisitas_default_datagroup
 explore: visitas {
   join:timelines1{
     type: left_outer
-    sql_on: ${visitas.fecha_visita_date}fecha_visita}=${timelines1.semana_date} ;;
+    sql_on: ${visitas.fecha_visita_date}=${timelines1.semana_date} ;;
     relationship: many_to_many
   }
 
