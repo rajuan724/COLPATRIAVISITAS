@@ -13,11 +13,11 @@ view: timelines1 {
     sql: ${TABLE}.semana ;;
   }
   dimension: tema {
-    primary_key: yes
     type: string
     sql: ${TABLE}.tema ;;
   }
   dimension: tipo {
+    primary_key: yes
     type: string
     sql: ${TABLE}.tipo ;;
   }
