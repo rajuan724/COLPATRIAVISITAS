@@ -18,5 +18,10 @@ explore: visitas {
     sql_on: ${visitas.fecha_visita_date}=${timelines1.semana_date} ;;
     relationship: many_to_many
   }
+  join:ventas2{
+    type: left_outer
+    sql_on: ${visitas.fecha_visita_date}=${ventas2.vta_fecha_real_date} ;;
+    relationship: many_to_many
+  }
 
 }
